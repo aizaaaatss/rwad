@@ -1,0 +1,17 @@
+      print("Деление на ноль невозможно!")
+          continue
+        else:
+          result = num1 / num2
+      else:
+        print("Неверная операция!")
+        continue
+
+      # Вывод результата
+      print(f"{num1} {operation} {num2} = {result}")
+
+      # Спросить пользователя, хочет ли он продолжить
+      again = input("Хотите выполнить еще одно вычисление? (да/нет): ")
+      if again.lower() != "да":
+        break
+
+    except ValueError:
